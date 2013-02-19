@@ -3,7 +3,7 @@ public class primeno
  public static void main(String[] args)
   {  
     int n;
-    int num=10;
+    int num=23;
     for(n=2;n<Math.sqrt(num);n++) 
     {
      if(num%n==0)
@@ -14,6 +14,7 @@ public class primeno
      else
       { 
        System.out.println("num  is prime ");
+       break;
       }
     }
   }
