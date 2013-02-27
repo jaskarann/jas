@@ -26,13 +26,13 @@ class worm
 					num=num/10;
 					continue;
 				}
-				while((num%10)!=sep)
+				while((num%10)!=sep && num!=0)
 				{
 					temp=(num%10)*pow(10,count)+temp;
 					count++;
 					num=num/10;	
 				}
-				System.out.print(temp+" ");
+				System.out.println(temp+" ");
 				
 				
 			}
@@ -54,7 +54,7 @@ class worm
 						temp=temp/10;
 						continue;
 					}
-				while(temp%10!=a)
+				while(temp%10!=a && temp!=0)
 				{
 					num =(temp%10)*pow(10,count)+num;
 					count++;
@@ -67,7 +67,6 @@ class worm
 				
 			}
 			
-			System.out.println();
 		
 		}
 		return sum;
@@ -78,8 +77,9 @@ public class bookworm
 {
 	public static void main(String[] args)
 	{       worm b=new worm();
-  		b.testnum(40560,0);
-		System.out.print(b.worm1(1,10000,0));
+  		b.testnum(400560,5);
+		System.out.print(b.worm1(1,1000,3));
+		
 		
 	}
 }
